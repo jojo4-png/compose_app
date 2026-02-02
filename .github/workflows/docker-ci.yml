@@ -21,7 +21,7 @@ jobs:
       - name: Test Application
         run: |
           sleep 5
-          curl localhost:5002 | grep "Traffic Monitor"
+          curl localhost:80 | grep "Traffic Monitor"
 
       - name: Shut Down
         run: docker compose down
